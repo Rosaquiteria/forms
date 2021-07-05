@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro do Usuário</title>
+	<style>
+		.quebra{
+			display: block;
+					}
+		
+		.espaco{
+			margin-bottom: 15px;
+
+		}	
+		select{
+			display: block;
+		}
+		
+		form{
+			border: 1px solid #000;
+			padding: 10px;
+			border-radius: 15px;
+			background-color: #eee;
+		}
+		#dv_btns{
+			display: flex;
+		}
+		h2{
+			text-align: center;
+		}
+		span{
+			display: block;
+			
+		}
+	</style>
+</head>
+<body>
+	<h2>DADOS DO USUÁRIO</h2>
+	<form class="quebra espaco" name="f_cadrastro" action="#" method="post">
+		<label>Nome</label>
+		<input class="quebra espaco" type="text" name="f_nome" maxlength="20" size="30"> 
+		<label class="espaco">Email</label>
+		<input class="quebra espaco" type="email" name="f_email" maxlength="20" size="30">
+		<label>Senha</label>
+		<input  class="quebra espaco" type="password" name="f_senha" maxlength="20" size="30">
+    	<label>Selecione sua cor preferida:</label>
+    	<input class="quebra espaco" type="color" name="favcor" value="#0000FF"> 
+    	<label>
+			<span>Sexo:</span>
+
+			<label for='m' class="sexo">
+			<input id='m' type="radio" name="gender" id="gender" value="m"> Masculino
+			</label>  
+
+			<label class="espaco" for='f' class="sexo">
+			<input  class="espaco" id='f' type="radio" name="gender" id="gender" value="f">  Feminino
+			</label>
+		</label> 
+    	<label class="quebra">Quantas pessoas têm na sua família:</label>
+    	<input class="quebra espaco" type="number" name="familia">
+    	<label>Data de nascimento:</label>
+		<input class="quebra espaco" type="datetime-local" name="nascimento"> 
+		<label>Selecione uma data especial:</label>
+		<input class="quebra espaco" type="date" name="especial"> 
+		<label>Defina uma que costuma acordar:</label>
+		<input class="quebra espaco" type="time" name="hora">
+		<label>Adicione um url de uma rede social:</label>
+		<input class="quebra espaco" type="url" name="social">
+		<label>Envie uma foto de perfil:</label>
+		<input class="quebra espaco" type="file" name="arquivos">
+		<label>UF de nascimento:</label>
+		<select class="espaco" name="uf" id="uf">
+			<option value="">Selecione</option>
+			<option value="AC">AC</option>
+			<option value="AL">AL</option>
+			<option value="AM">AM</option>
+			<option value="AP">AP</option>
+			<option value="BA">BA</option>
+			<option value="CE">CE</option>
+			<option value="DF">DF</option>
+			<option value="ES">ES</option>
+			<option value="GO">GO</option>
+			<option value="MA">MA</option>
+			<option value="MG">MG</option>
+			<option value="MS">MS</option>
+			<option value="MT">MT</option>
+			<option value="PA">PA</option>
+			<option value="PB">PB</option>
+			<option value="PE">PE</option>
+			<option value="PI">PI</option>
+			<option value="PR">PR</option>
+			<option value="RJ">RJ</option>
+			<option value="RN">RN</option>
+			<option value="RS">RS</option>
+			<option value="RO">RO</option>
+			<option value="RR">RR</option>
+			<option value="SC">SC</option>
+			<option value="SE">SE</option>
+			<option value="SP">SP</option>
+			<option value="TO">TO</option>
+ 		</select>
+ 		<label>
+			<span>Quais as suas preferências Músicais?</span>
+
+			<label for='r' class="rock">
+			<input id='r' type="checkbox" name="mu" id="mu" value="r"> Rock
+			</label>  
+
+			<label class="espaco" for='mpb' class="mpb">
+			<input  class="espaco" id='mpb' type="checkbox" name="mu" id="mu" value="mpb">MPB
+			</label>
+
+			<label for='s' class="sertenajo">
+			<input id='s' type="checkbox" name="mu" id="mu" value="s"> Sertanejo
+			</label>
+
+			<label for='p' class="pop">
+			<input id='p' type="checkbox" name="mu" id="mu" value="p"> POP
+			</label>
+
+			<label for='n' class="nenhum">
+			<input id='n' type="checkbox" name="mu" id="mu" value="n"> Nenhuma das anteriores
+			</label>
+		</label> 
+
+		<div id="dv_btns">
+			<input class="espaco" type="submit" name="f_btn_enviar" value="Enviar">
+			<input class="espaco" type="reset" name="f_btn_limpar" value="Limpar">
+		</div>
+	</form>
+	
+</body>
+</html>
